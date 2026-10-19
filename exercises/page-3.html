@@ -14,32 +14,31 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+
+    header h1 {
+        @apply text-6xl md:text-9xl mb-10;
     }
-        head {
-            @pply font-serif font-bold;
-        }
-        section {   
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+
+    header h2 {
+        @apply text-3xl md:text-5xl;
+    }
+
+    section {
+        @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+    }
+
+    section h2 {
+        @apply mt-8 mb-2 text-2xl md:text-4xl;
+    }
+
+    section p {
+        @apply mb-4 text-lg md:text-2xl;
     } 
-        section h2 {   
-            @apply italic;
-    }
-
-        section h3 {   
-            @apply mt-6;
-    }
-
-        section p {   
-            @apply mb-4;
-    }  
+    
     </style>
 
 <body>
 
-    <!-- Navigation menu with logo -->
-    <nav>
         <a href="/" aria-label="Homepage">Logo</a>
 
         <ul>
@@ -47,7 +46,6 @@
             <li><a href="#section2">Section 2</a></li>
             <li><a href="#section3">Section 3</a></li>
         </ul>
-    </nav>
 
     <!-- Hero block -->
     <header>
@@ -86,17 +84,12 @@
                 nobis nulla obcaecati quibusdam quae, quia aliquam mollitia
                 ea vel ullam dolores natus in quisquam?
             </p>
+
+            <p><a href="../index.html">Back to Home page</a></p>
+
         </section>
 
     </main>
 
-    <!-- Main content ends here -->
-
-    <!-- Links to related web pages, legal and copyright -->
-    <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
-    </footer>
-
 </body>
-
 </html>
