@@ -1,84 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Block with Text</title>
-    <meta name="description" content="An above-the-fold hero block with animated text and various background colours.">
-    <!-- Link to Tailwind CSS -->
+
+    <title>Hero Block with Animated Text</title>
+
+    <!-- Jose Erico - 78589 -->
+
+    <meta name="description"
+          content="A responsive hero block with animated text and a purple gradient background.">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Custom styles -->
     <style type="text/tailwindcss">
 
-        header { 
+        header {
             @apply min-h-[60vh] md:min-h-[80vh]
-            bg-linear-to-b from-purple-600 to-purple-900
-            flex flex-col justify-center
-            px-8 lg:px-60 py-12
-            text-center;
+                   bg-linear-to-b from-purple-600 to-purple-900
+                   flex flex-col justify-center
+                   px-8 lg:px-60 py-12
+                   text-center;
         }
-        
 
         header h1 {
-            @apply text-7xl md:text-8xl
-            text-white font-bold
-            tracking-tight
-            mb-6
-            
+            @apply text-6xl md:text-8xl
+                   text-white font-bold
+                   tracking-tight mb-6;
         }
 
         header h2 {
-            @apply text-4xl md:text-5xl
-            text-white;
+            @apply text-2xl md:text-4xl
+                   text-white font-medium;
         }
 
-    
         .slide-in-top {
-            animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+            animation: slide-in-top 1s
+                cubic-bezier(0.250, 0.460, 0.450, 0.940)
+                both;
         }
 
         @keyframes slide-in-top {
             0% {
                 transform: translateY(-1000px);
                 opacity: 0;
-        }
+            }
+
             100% {
                 transform: translateY(0);
                 opacity: 1;
+            }
         }
-}
 
         .slide-in-left {
-            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+            animation: slide-in-left 1s
+                cubic-bezier(0.250, 0.460, 0.450, 0.940)
+                both;
         }
 
         @keyframes slide-in-left {
             0% {
                 transform: translateX(-1000px);
-                pacity: 0;
-        }
+                opacity: 0;
+            }
+
             100% {
                 transform: translateX(0);
                 opacity: 1;
+            }
         }
-}
+
+        @media (prefers-reduced-motion: reduce) {
+            .slide-in-top,
+            .slide-in-left {
+                animation: none;
+            }
+        }
 
     </style>
 
 </head>
 
+<body class="bg-white">
 
-<body>
+    <header>
 
-    <!-- hero block -->
-     <header>
-        <h1 class="slide-in-top">Albert Camus</h1>
+        <h1 class="slide-in-top">
+            Albert Camus
+        </h1>
 
-        <h2 class="slide-in-left">Creative Web Developer</h2>
+        <h2 class="slide-in-left">
+            Creative Web Developer
+        </h2>
+
     </header>
-    <!-- /hero block -->
 
+    <main class="px-8 py-10 text-center">
+
+        <p class="text-lg text-gray-700">
+            Welcome to my Front-End Development project.
+        </p>
+
+    </main>
+
+    <footer class="text-center py-6">
+
+        <a href="../index.html"
+           class="text-purple-700 underline hover:text-purple-900">
+            Return to Home
+        </a>
+
+    </footer>
 </body>
 </html>
