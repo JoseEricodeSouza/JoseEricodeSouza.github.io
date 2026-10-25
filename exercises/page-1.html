@@ -1,18 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>A Tale of Two Cities</title>
-    
-    <!-- Jose Erico -78589 -->
-    
-    <meta name="description" content="A basic web page containing some text from A Tale of Two Cities, a novel published in 1859 by English author Charles Dickens."><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Jose Erico - 78589 -->
+
+    <meta name="description"
+          content="A basic web page containing some text from A Tale of Two Cities, a novel published in 1859 by English author Charles Dickens.">
+
+    <!-- Tailwind v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style type="text/tailwindcss">
-    
+
         header h1 {
-            @apply text-6xl md:text-8xl;
+            @apply text-6xl md:text-8xl font-bold;
         }
 
         section {
@@ -34,24 +40,45 @@
     </style>
 </head>
 
+<body class="bg-white text-gray-900">
 
-<body>
-    <header>
-        <h1>A Tale of Two Cities</h1>
+    <header class="px-[9%] py-8 md:px-[20%]">
+        <h1 class="text-6xl md:text-8xl font-bold">
+            A Tale of Two Cities
+        </h1>
     </header>
 
     <main>
         <section>
-            <p>It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.</p>
 
-            <p>by <i>Charles Dickens</i>, published by <b>Chapman and Hall</b> in 1859.</p>
+            <p>
+                It was the best of times, it was the worst of times,
+                it was the age of wisdom, it was the age of foolishness,
+                it was the epoch of belief, it was the epoch of
+                incredulity, it was the season of Light, it was the
+                season of Darkness, it was the spring of hope,
+                it was the winter of despair.
+            </p>
+
+            <p>
+                by <i>Charles Dickens</i>, published by
+                <b>Chapman and Hall</b> in 1859.
+            </p>
 
         </section>
-
     </main>
 
+    <footer class="px-[9%] py-6 md:px-[20%]">
 
-<p>Return to <a href="../index.html">Home</a></p>
-    
+        <p>
+            Return to
+            <a href="../index.html"
+               class="text-blue-600 underline hover:text-blue-800">
+                Home
+            </a>
+        </p>
+
+    </footer>
+
 </body>
 </html>
