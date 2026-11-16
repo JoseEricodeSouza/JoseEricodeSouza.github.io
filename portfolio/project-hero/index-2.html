@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jose Erico de Souza">
+    <meta name="description" content="Snazzy Analytics hero block for a frontend portfolio project.">
+
+    <title>Jose Erico | Portfolio | Hero Block 2</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* GENERAL STYLES */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #2348c4;
+            text-decoration: underline;
+            margin: 0 8px;
+            font-size: 16px;
+        }
+
+        /* HERO BLOCK 2 */
+
+        header {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f7ff;
+            padding: 80px 7%;
+        }
+
+        .hero-container {
+            width: 100%;
+            max-width: 1200px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        /* LEFT CONTENT */
+
+        .hero-text h1 {
+            font-family: 'Lato', sans-serif;
+            font-size: clamp(42px, 5vw, 72px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            color: #172b62;
+        }
+
+        .hero-text h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: clamp(19px, 2vw, 26px);
+            font-weight: 400;
+            line-height: 1.4;
+            color: #424b61;
+            margin-bottom: 35px;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+            background-color: #2857da;
+            color: #ffffff;
+            padding: 16px 30px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #173b9e;
+        }
+
+        /* RIGHT IMAGE */
+
+        .hero-image {
+            width: 100%;
+            text-align: center;
+        }
+
+        .hero-image img {
+            display: block;
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        /* RESPONSIVE LAYOUT */
+
+        @media (max-width: 768px) {
+
+            nav {
+                line-height: 2;
+            }
+
+            header {
+                padding: 60px 25px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 42px;
+            }
+
+            .hero-text h2 {
+                font-size: 21px;
+            }
+
+            .hero-image img {
+                max-width: 420px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index-1.html">Hero Block 1</a> |
+        <a href="index-2.html">Hero Block 2</a> |
+        <a href="index-3.html">Hero Block 3</a> |
+        <a href="index-4.html">Hero Block 4</a> |
+        <a href="index-5.html">Hero Block 5</a>
+    </nav>
+
+    <!-- HERO BLOCK 2 -->
+
+    <header>
+
+        <div class="hero-container">
+
+            <!-- TEXT COLUMN -->
+            <div class="hero-text">
+
+                <h1>
+                    Putting the tricks
+                    into web analytics
+                </h1>
+
+                <h2>
+                    Snazzy Analytics helps you boost your
+                    business impact. Supports all modern
+                    JavaScript frameworks, including
+                    React, Vue, and Svelte.
+                </h2>
+
+                <a href="https://example.com"
+                   class="btn"
+                   onclick="event.preventDefault()">
+                    Try it for free
+                </a>
+
+            </div>
+
+            <!-- IMAGE COLUMN -->
+            <div class="hero-image">
+
+                <img
+                    src="assets/img/analytics.png"
+                    alt="Business analytics illustration"
+                    width="560"
+                    height="420"
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+</body>
+
+</html>

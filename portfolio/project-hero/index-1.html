@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jose Erico de Souza">
+    <meta name="description" content="Snazzy Headphones hero page for my frontend portfolio project.">
+
+    <title>Jose Erico | Portfolio | Hero Block 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            padding: 25px;
+            background-color: #ffffff;
+        }
+
+        nav a {
+            color: #233cb5;
+            margin: 0 8px;
+            text-decoration: underline;
+        }
+
+        header {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)
+                ),
+                url("assets/img/duotone.jpg");
+
+            background-position: center;
+            background-size: cover;
+            background-color: #25243c;
+            color: #ffffff;
+        }
+
+        .hero-content {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        header h1,
+        header h2 {
+            font-family: 'Abril Fatface', serif;
+            letter-spacing: 1px;
+        }
+
+        header h1 {
+            font-size: clamp(48px, 7vw, 100px);
+            margin-bottom: 25px;
+        }
+
+        header h2 {
+            font-size: clamp(22px, 3vw, 38px);
+            font-weight: 400;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 28px;
+            margin: 8px;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: #ffcf40;
+            color: #181818;
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                line-height: 2;
+            }
+
+            header {
+                min-height: 75vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index-1.html">Hero Block 1</a> |
+        <a href="index-2.html">Hero Block 2</a> |
+        <a href="index-3.html">Hero Block 3</a> |
+        <a href="index-4.html">Hero Block 4</a> |
+        <a href="index-5.html">Hero Block 5</a>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+
+            <h1>Snazzy Headphones</h1>
+
+            <h2>
+                Enjoy tunes while you develop software
+            </h2>
+
+            <a href="#details" class="btn btn-primary">
+                Order Now
+            </a>
+
+            <a href="#details" class="btn btn-secondary">
+                Learn More
+            </a>
+
+        </div>
+    </header>
+
+    <main id="details" style="padding:50px 20px;text-align:center;">
+        <h2>Snazzy Headphones</h2>
+        <p>Enjoy tunes while you develop software.</p>
+    </main>
+
+</body>
+</html>
