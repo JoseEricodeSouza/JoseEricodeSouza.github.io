@@ -1,1 +1,140 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jose Erico | Hero Blocks Portfolio</title>
+
+    <meta name="description"
+          content="A collection of five responsive HTML hero blocks created for a frontend development portfolio.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f5fa;
+            color: #202b46;
+        }
+
+        header {
+            text-align: center;
+            background: #172b4d;
+            color: white;
+            padding: 65px 20px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,
+                minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,.08);
+        }
+
+        .card h2 {
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #2857da;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+        }
+
+        .card a:hover {
+            background: #183b99;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hero Blocks Portfolio</h1>
+        <p>Frontend Development | Jose Erico de Souza</p>
+    </header>
+
+    <main>
+        <section class="projects">
+
+            <article class="card">
+                <h2>Hero Block 1</h2>
+                <p>Snazzy Headphones</p>
+                <a href="index-1.html">View Project</a>
+            </article>
+
+            <article class="card">
+                <h2>Hero Block 2</h2>
+                <p>Snazzy Analytics</p>
+                <a href="index-2.html">View Project</a>
+            </article>
+
+            <article class="card">
+                <h2>Hero Block 3</h2>
+                <p>Fashion Collection</p>
+                <a href="index-3.html">View Project</a>
+            </article>
+
+            <article class="card">
+                <h2>Hero Block 4</h2>
+                <p>Claire's Hair</p>
+                <a href="index-4.html">View Project</a>
+            </article>
+
+            <article class="card">
+                <h2>Hero Block 5</h2>
+                <p>Jennifer Chang — UI Designer</p>
+                <a href="index-5.html">View Project</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Jose Erico de Souza | Frontend Portfolio</p>
+    </footer>
+
+</body>
+</html>
