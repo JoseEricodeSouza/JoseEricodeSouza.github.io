@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jose Erico de Souza">
+    <meta name="description" content="Fashion collection hero block for my frontend portfolio project.">
+
+    <title>Jose Erico | Portfolio | Hero Block 3</title>
+
+    <!-- Google Font: Prata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* GENERAL STYLES */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #222;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #2348c4;
+            margin: 0 8px;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+
+        /* HERO BLOCK */
+
+        header {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 7%;
+            background-color: #f8f0eb;
+        }
+
+        .hero-container {
+            width: 100%;
+            max-width: 1250px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        /* TEXT */
+
+        .hero-text h1 {
+            font-family: 'Prata', serif;
+            font-size: clamp(44px, 5vw, 76px);
+            font-weight: 400;
+            line-height: 1.2;
+            color: #322321;
+            margin-bottom: 25px;
+        }
+
+        .hero-text h2 {
+            font-family: 'Prata', serif;
+            font-size: clamp(22px, 2.5vw, 32px);
+            font-weight: 400;
+            line-height: 1.4;
+            color: #6e4d46;
+            margin-bottom: 22px;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #5b514d;
+            margin-bottom: 30px;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #5e3936;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #38201f;
+        }
+
+        .btn-secondary {
+            color: #5e3936;
+            border: 2px solid #5e3936;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5e3936;
+            color: #ffffff;
+        }
+
+        /* IMAGE */
+
+        .hero-image img {
+            width: 100%;
+            max-width: 530px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            nav {
+                line-height: 2;
+            }
+
+            header {
+                padding: 60px 25px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 43px;
+            }
+
+            .hero-text h2 {
+                font-size: 23px;
+            }
+
+            .hero-text p {
+                font-size: 18px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .hero-image img {
+                max-width: 400px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index-1.html">Hero Block 1</a> |
+        <a href="index-2.html">Hero Block 2</a> |
+        <a href="index-3.html">Hero Block 3</a> |
+        <a href="index-4.html">Hero Block 4</a> |
+        <a href="index-5.html">Hero Block 5</a>
+    </nav>
+
+    <!-- HERO BLOCK 3 -->
+
+    <header>
+
+        <div class="hero-container">
+
+            <!-- LEFT COLUMN -->
+
+            <div class="hero-text">
+
+                <h1>
+                    Look great.<br>
+                    Feel fantastic.
+                </h1>
+
+                <h2>
+                    Exclusive designs direct to your door.
+                </h2>
+
+                <div class="buttons">
+                    <a href="#collection" class="btn btn-primary">
+                        Full collection
+                    </a>
+
+                    <a href="#collection" class="btn btn-secondary">
+                        New arrivals
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/img/fashion.jpg"
+                    alt="Fashion collection featuring modern clothing"
+                    width="530"
+                    height="600"
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main id="collection" style="padding:40px 20px;text-align:center;">
+        <h2>Explore our fashion collection</h2>
+        <p>Discover exclusive designs and new arrivals.</p>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jose Erico de Souza">
+    <meta name="description" content="Claire's Hair salon hero page for my frontend development portfolio.">
+
+    <title>Jose Erico | Portfolio | Hero Block 4</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* GENERAL STYLES */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #33262f;
+            background-color: #ffffff;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #2348c4;
+            text-decoration: underline;
+            margin: 0 8px;
+            font-size: 16px;
+        }
+
+        /* HERO BLOCK */
+
+        header {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9edf3;
+            padding: 80px 7%;
+        }
+
+        .hero-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 65px;
+        }
+
+        /* LEFT TEXT COLUMN */
+
+        .hero-text {
+            max-width: 580px;
+        }
+
+        .offer {
+            display: inline-block;
+            background-color: #f4d3e2;
+            color: #8b365d;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 10px 18px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(50px, 6vw, 85px);
+            font-weight: 400;
+            letter-spacing: -4px;
+            line-height: 1.15;
+            color: #742d50;
+            margin-bottom: 30px;
+        }
+
+        .hero-text h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: clamp(20px, 2vw, 27px);
+            font-weight: 400;
+            line-height: 1.5;
+            color: #684e5b;
+            margin-bottom: 35px;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 30px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #8b365d;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #60203f;
+        }
+
+        .btn-secondary {
+            color: #8b365d;
+            border: 2px solid #8b365d;
+        }
+
+        .btn-secondary:hover {
+            background-color: #8b365d;
+            color: white;
+        }
+
+        /* RIGHT IMAGE COLUMN */
+
+        .hero-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 490px;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* DEMO SECTION */
+
+        .salon-info {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #ffffff;
+        }
+
+        .salon-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            color: #742d50;
+            margin-bottom: 20px;
+        }
+
+        .salon-info p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* RESPONSIVE MOBILE */
+
+        @media (max-width: 768px) {
+
+            nav {
+                line-height: 2;
+            }
+
+            header {
+                padding: 60px 25px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 52px;
+                letter-spacing: -2px;
+            }
+
+            .hero-text h2 {
+                font-size: 20px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .hero-image img {
+                max-width: 350px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index-1.html">Hero Block 1</a> |
+        <a href="index-2.html">Hero Block 2</a> |
+        <a href="index-3.html">Hero Block 3</a> |
+        <a href="index-4.html">Hero Block 4</a> |
+        <a href="index-5.html">Hero Block 5</a>
+    </nav>
+
+    <!-- HERO BLOCK 4 -->
+
+    <header>
+
+        <div class="hero-container">
+
+            <!-- LEFT COLUMN -->
+
+            <div class="hero-text">
+
+                <p class="offer">
+                    10% off all week
+                </p>
+
+                <h1>
+                    Claire's Hair
+                </h1>
+
+                <h2>
+                    Our team of stylists offer the latest
+                    fashions and techniques.
+                </h2>
+
+                <div class="buttons">
+
+                    <a href="#salon" class="btn btn-secondary">
+                        Our salon
+                    </a>
+
+                    <a href="#salon" class="btn btn-primary">
+                        Book now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/img/hair.png"
+                    alt="Claire's Hair salon model"
+                    width="490"
+                    height="550"
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- EXTRA CONTENT FOR DEMONSTRATION -->
+
+    <main id="salon" class="salon-info">
+
+        <h2>Welcome to Claire's Hair</h2>
+
+        <p>
+            Discover stylish haircuts, beautiful colours
+            and professional salon services.
+        </p>
+
+    </main>
+
+</body>
+</html>
